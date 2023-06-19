@@ -390,6 +390,7 @@ height: 0.2rem;
     border-radius: 100%;
     text-align: center;
     box-shadow: 0 25px 50px -12px var(--color-accent);
+    transition: opacity 300ms ease-in;
 }
 /* Footer */
 
