@@ -26,10 +26,10 @@
       crossorigin="anonymous"
     ></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel=" stylesheet" href="css/style.css" />
     <!-- Javascript -->
-    <script type="module" rel="src/main.js" defer></script>
-    <script type="module" rel="src/projects.js" defer></script>
+    <script type="module" src="src/main.js"></script>
+    <script type="module" src="src/projects.js"></script>
   </head>
   <!-- Header -->
   <header class="header">
@@ -41,12 +41,12 @@
       <ul class="header__menu">
         <li><a class="header__menu__item active" href="#home">Home</a></li>
         <li><a class="header__menu__item" href="#about">About</a></li>
-        <li><a class="header__menu__item" href="#workd">My Work</a></li>
+        <li><a class="header__menu__item" href="#work">My Work</a></li>
         <li><a class="header__menu__item" href="#skills">Skills</a></li>
         <li>
           <a class="header__menu__item" href="#testimonial">Testimonial</a>
         </li>
-        <li><a class="header__menu__item" href="#footer">Contact</a></li>
+        <li><a class="header__menu__item" href="#contact">Contact</a></li>
       </ul>
     </nav>
     <button class="header__toggle" aria-label="navigation menu toggle">
@@ -174,19 +174,19 @@
         <p class="description">Project</p>
         <ul class="categories">
           <li>
-            <button class="category category--selected">
+            <button class="category category--selected" data-category="all">
               All
               <span class="category__count">3</span>
             </button>
           </li>
           <li>
-            <button class="category">
+            <button class="category" data-category="Front-end">
               Front-end<span class="category__count">3</span>
             </button>
           </li>
         </ul>
         <ul class="projects">
-          <li class="project">
+          <li class="project" data-type="Front-end">
             <a href="https://github.com/GongE7E/kokoa-clone" target="_blank">
               <img
                 src="images/practice/htmlcss3.png"
@@ -199,7 +199,7 @@
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="Front-end">
             <a href="#" target="_blank"
               ><img
                 src="images/practice/css1.png"
@@ -212,7 +212,7 @@
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="Front-end">
             <a href="#" target="_blank"
               ><img
                 src="images/practice/css2.png"
